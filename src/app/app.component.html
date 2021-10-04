@@ -1,0 +1,18 @@
+<h2>Agenda</h2>
+
+<table class="table table-striped table-hover">
+  <thead> 
+  <th *ngFor="let indice of headers">
+    <tr>{{indice}}</tr>
+  </th>  
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let row of alunos">
+    <td > {{row.Nome}}</td>
+     <td >  {{row.RU}}</td> 
+       <td >    {{row.Curso}}</td> 
+       <td >     {{row.Nascimento}}</td> 
+  </tr>
+  </tbody>
+</table>
